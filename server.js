@@ -8,7 +8,7 @@ var somePath=path.resolve(__dirname, 'app', 'index.js')
 
 var compiler = webpack(webpackConfig);
 
-var port = 5004
+var port = 5001
 
 app.use(require('webpack-dev-middleware')(compiler, {
 	noInfo: true,
