@@ -22,6 +22,14 @@ app.get('*', function(req, res){
 	res.sendFile(somePath);
 });
 
+app.listen(port, function(err){
+	if(err){
+		console.log(err);
+		return;
+	}
+	console.log("Listening at http://localhost:" + port)
+})
+
 // app.listen(port, 'localhost', function(err){
 // 	if(err){
 // 		console.log(err);
@@ -30,4 +38,4 @@ app.get('*', function(req, res){
 // 	console.log("Listening at http://localhost:" + port)
 // })
 
-app.listen(port)
+// app.listen(port)
