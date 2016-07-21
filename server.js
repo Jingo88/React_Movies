@@ -27,7 +27,7 @@ app.listen(port, function(err){
 		console.log(err);
 		return;
 	}
-	console.log("Listening at http://localhost:" + port)
+	console.log("Listening at " + port)
 })
 
 // app.listen(port, 'localhost', function(err){
